@@ -113,7 +113,7 @@ function create() {
 
     //  Add player
 
-    this.player = this.impact.add.image(64, 300, 'player').setDepth(1);
+    this.player = PLAYERS.getAvatar(this.impact);
     this.player
         .setMaxVelocity(400, 400)
         .setFriction(1000, 1000)
